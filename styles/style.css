@@ -1,5 +1,11 @@
 /* Общие стили */
 
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
 button {
     border: none;
     background-color: transparent;
@@ -17,7 +23,6 @@ button {
 /* Навигация шапки */
 
 .header {
-    width: 100vw;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -102,7 +107,7 @@ button {
 
 .feedback-button {
     height: 36px;
-    min-width: 154px;
+    width: fit-content;
     background-color: var(--main-color);
     color: #fff;
     border-radius: 16px;
@@ -171,13 +176,16 @@ h4 {
 }
 
 .main-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     background-image: url('../images/card1.png');
     background-repeat: no-repeat;
     background-size: cover;
     width: 728px;
     height: 348px;
     border-radius: 30px;
-    padding: 15px 19px 20px 19px;
+    padding: 15px 19px 10px 19px;
 }
 
 .card-number {
@@ -187,6 +195,11 @@ h4 {
     border-radius: 50%;
     padding: 10.5px 0 0 10.5px;
     font-weight: 700;
+    margin: 72px 13px 10px 0px;
+}
+
+.card-main-number {
+    margin: 0;
 }
 
 .main-theme {
@@ -196,6 +209,7 @@ h4 {
 
 .main-theme::before {
     content: '';
+    margin-bottom: -6px;
     background-image: url('../images/loading.png');
     display: inline-block;
     width: 24px;
@@ -204,20 +218,21 @@ h4 {
 }
 
 .specializations-container {
-    color: #fff;
     display: flex;
+    color: #fff;
     gap: 8px;
+    flex-wrap: wrap;
 }
 
 .specialization {
     background-color: #144177;
-    display: block;
     border: 1px solid #fff;
     border-radius: 14px;
     line-height: 150%;
     padding: 4.5px 9px;
     white-space: nowrap;
     position: relative;
+    width: fit-content;
 }
 
 .specialization:not(:last-child):after {
@@ -232,9 +247,14 @@ h4 {
     top: 11px;
 }
 
-.bottom-information {
+/* удаление точки после третьей карточки */
+.specialization:nth-child(4n):after {
+    display: none;
+}
+
+.main-card .bottom-information {
     display: flex;
-    align-content: end;
+    align-items: center;
     justify-content: space-between;
 }
 
@@ -243,10 +263,51 @@ h4 {
     gap: 10px;
 }
 
+.text-info {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.card-number-active {
+    margin: 0;
+}
+
 .blue-card {
-    background-color: #144177;
+    background-color: var(--main-color);
     width: 70px;
     border-radius: 30px;
+}
+
+.card-services {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card-services .card-number {
+    margin-left: 13px;
+}
+
+.service {
+    transform: rotate(-90deg);
+    color: #fff;
+    margin-top: 150px;
+}
+
+.advantages {
+    display: flex;
+    flex-direction: row;
+    gap: 70px;
+    margin-top: 20px;
+}
+
+.magnifier-container {
+    background-color: #fff;
+    width: 73px;
+    height: 73px;
+    border-radius: 50%;
+    padding: 15.5px;
 }
 
 .white-blue-card {
@@ -263,6 +324,11 @@ h4 {
     background-size: cover;
 }
 
+.graphic-info {
+    display: flex;
+    justify-content: space-between;
+}
+
 .overlay {
     background-color: rgba(2, 75, 186, 0.26);
     border-radius: 30px;
@@ -272,6 +338,10 @@ h4 {
     box-shadow: inset 0 0 34.01px rgba(255, 255, 255, 0.05),
                 inset 0 2.27px 2.27px rgba(255, 255, 255, 0.15);
     position: relative;
+    padding: 13px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
 }
 
 .name-card {
@@ -286,6 +356,11 @@ h4 {
     font-size: 14px;
 }
 
+.card .bottom-information {
+    margin-left: 13px;
+    margin-bottom: 10px;
+}
+
 .more-info {
     background-color: #fff;
     border-radius: 16px;
@@ -296,5 +371,189 @@ h4 {
     width: 42px;
 }
 
+.advantages-container {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Roboto';
+    font-weight: 600;
+    line-height: 150%;
+}
 
 /* Нижняя часть шапки */
+
+.offer-image {
+    width: 28px;
+    margin: 14px;
+}
+
+.header-bottom {
+    display: flex;
+    gap: 75px;
+}
+
+.offers {
+    display: flex;
+    flex-direction: row;
+    gap: 36px;
+}
+
+h3 {
+    font-size: 36px;
+}
+
+.go-audit {
+    width: 285px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.offer-image-container {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: solid #fff 1px; 
+}
+
+.offer-container {
+    background-color: var(--offers-info-background);
+    width: 211px;
+    height: 119px;
+    border-radius: 30px;
+    padding: 30px 25px;
+    display: flex;
+    gap: 12px;
+}
+
+.offer-text-main {
+    font-size: 14px;
+}
+
+.offer-text-number {
+    font-size: 24px;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-advantages {
+    padding: 50px 64px 0 64px;
+}
+
+.blue-text {
+    color: var(--main-color);
+}
+
+.text-advantages {
+    font-size: 18px;
+}
+
+.advertisement-text {
+    font-size: 74px;
+    width: 636px;
+}
+
+.main-advantages-text-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.main-advantages-info {
+    width: 408px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 16px;
+}
+
+.main-advantages-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 60px;
+}
+
+.advantages-image {
+    width: 418px;
+    height: 637px;
+    padding: 41px 39px;
+    border-radius: 30px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+}
+
+.radial-bottom::before {
+    content: '';
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: block;
+    border-radius: 30px;
+    background: radial-gradient(circle at bottom, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.05) 20%, rgba(0, 0, 0, 0.7) 100% );
+}
+
+.radial-bottom .number-card{
+    color: #000;
+    border: #000 solid 1px;
+}
+
+.radial-top::before {
+    content: '';
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: block;
+    border-radius: 30px;
+    background: radial-gradient(circle at top, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.05) 20%, rgba(0, 0, 0, 0.7) 100% );
+}
+
+.card-1 {
+    background-image: url('/images/card-1.png');
+}
+
+.card-2 {
+    background-image: url('/images/card-2.png');
+    flex-direction: column-reverse;
+}
+
+.card-3 {
+    background-image: url('/images/card-3.png');
+    background-position: 72%;
+}
+
+.images-container {
+    display: flex;
+    gap: 30px;
+}
+
+.number-card {
+    width: 76px;
+    height: 76px;
+    color: #fff;
+    border: #fff solid 1px;
+    border-radius: 50%;
+    padding: 25px;
+    font-size: 20px;
+    z-index: 4;
+}
+
+.advantages-info {
+    color: #fff;
+    font-size: 36px;
+    z-index: 4;
+}
+
+.overlay-radial {
+    background-color: #0C47A0;
+}
