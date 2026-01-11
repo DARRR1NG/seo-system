@@ -437,6 +437,7 @@ h3 {
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 50px;
 }
 
 .main-advantages {
@@ -556,4 +557,99 @@ h3 {
 
 .overlay-radial {
     background-color: #0C47A0;
+}
+
+.our-offers-container {
+    display: flex;
+    gap: 460px;
+    align-items: center;
+}
+
+.offers-main {
+    font-size: 74px;
+}
+
+.add-info-text {
+    font-size: 18px;
+}
+
+.offers-company {
+    display: flex;
+    gap: 45px;
+}
+
+.card-offer {
+    width: 407px;
+    height: 444px;
+    border-radius: 33px;
+    background-color: var(--offers-info-background);
+    padding: 37px 30px;
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    justify-content: space-between;
+}
+
+.our-offers {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.small-icon {
+    width: 18px;
+    height: 16px;
+}
+
+.small-icon-container {
+    border-radius: 50%;
+    border: solid  var(--main-text-color) 1px;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    padding-top: 5px;
+    align-content: center;
+    justify-content: center;
+}
+
+.arrow-icon {
+    width: 60px;
+}
+
+.property {
+    border: 1px solid var(--main-text-color);
+    border-radius: 16px;
+    padding: 4px 10px;
+    height: fit-content;
+}
+
+.add-info-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+h4 {
+    font-size: 36px;
+    color: var(--main-text-color);
+}
+
+.number-offer {
+    font-size: 158px;
+    color: var(--main-text-color)
+}
+
+.offer-info-container {
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+}
+
+.property-container {
+    display: flex;
+    gap: 5px;
+}
+
+.description {
+    font-size: 18px;
+    color: var(--paragraph-text-color);
 }
