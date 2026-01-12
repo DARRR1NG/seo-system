@@ -31,7 +31,6 @@ button {
 
 .menu-nav {
     list-style: none;
-    width: 100%;
     background-color: #F4F4F4;
     height: 33px;
     width: auto;
@@ -39,7 +38,6 @@ button {
     display: flex;
     align-items: center;
     font-weight: 400;
-    font-style: Regular;
     font-size: 14px;
     line-height: 150%;
     text-align: center;
@@ -702,4 +700,25 @@ h4 {
     background-clip: text;
     color: transparent;
     font-size: 128px;
+}
+
+.effect:hover {
+    background-color: var(--main-color);
+    color: #fff;
+    height: 33px;
+    border-radius: 16px;
+    transition-property: background-color;
+    transition-duration: 500ms;
+}
+
+.effect:focus-visible {
+    outline: none;
+    border: solid 2px var(--main-color);
+    border-radius: 16px;
+    transition-property: border;
+    transition-duration: 500ms;
+}
+
+.effect {
+    border: 2px solid transparent;
 }
