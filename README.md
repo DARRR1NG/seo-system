@@ -1,7 +1,7 @@
 # Pet-проект "SEO system"
 
 ## :grey_question: Описание проекта
-Адаптивная страница
+Адаптивная страница компании продвижения бизнеса.
 
 ## :computer: Технологический стек
 HTML, CSS, JavaScript
@@ -21,5 +21,5 @@ HTML, CSS, JavaScript
 Перейти по ссылке: https://darrr1ng.github.io/seo-system/
 
 ## :art: Макет 
-https://www.figma.com/design/W7o5ajajt3Tzvgh917bJHt/SEO-system_тестовое-задание--Copy-?node-id=0-1&p=f&t=RZMYzyk0sCYFL5du-0
+https://www.figma.com/design/W7o5ajajt3Tzvgh917bJHt/SEO-system?node-id=0-1&p=f&t=Jcc8KKsTPKe1hBfm-0
 
