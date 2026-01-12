@@ -12,11 +12,10 @@ function timeData () {
 
   const daysMonth = daysInMonth(time.getDate(), time.getFullYear())
 
-  const daysRemained = daysMonth - 1 - time.getDate();
+  const daysRemained = daysMonth - time.getDate();
   const hoursRemained = 23 - time.getHours();
   const minutesRemained = 59 - time.getMinutes();
   const secondsRemained = 59 - time.getSeconds();
-
 
   hoursPlace.textContent = String(hoursRemained).padStart(2, '0');
   daysPlace.textContent = String(daysRemained).padStart(2, '0');

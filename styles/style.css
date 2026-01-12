@@ -521,16 +521,16 @@ h3 {
 }
 
 .card-1 {
-    background-image: url('/images/card-1.png');
+    background-image: url('../images/card-1.png');
 }
 
 .card-2 {
-    background-image: url('/images/card-2.png');
+    background-image: url('../images/card-2.png');
     flex-direction: column-reverse;
 }
 
 .card-3 {
-    background-image: url('/images/card-3.png');
+    background-image: url('../images/card-3.png');
     background-position: 72%;
 }
 
@@ -658,7 +658,7 @@ h4 {
 .sale {
     width: 1312px;
     height: 546px;
-    background-image: url('/images/background-sale.png');
+    background-image: url('../images/background-sale.png');
     border-radius: 33px;
     padding: 30px;
     margin-bottom: 40px;
