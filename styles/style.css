@@ -159,6 +159,7 @@ h4 {
 .main-text-container {
     display: flex;
     gap: 300px;
+    margin-bottom: 30px;
 }
 
 .main-text::after {
