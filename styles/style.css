@@ -153,6 +153,7 @@ h4 {
     height: auto;
     background: linear-gradient(90deg, #0C47A0 0%, #8FECFC 100%);
     border-radius: 30px;
+    padding: 2px;
 }
 
 .main-text-container {
@@ -567,6 +568,7 @@ h3 {
 
 .offers-main {
     font-size: 74px;
+    font-weight: 400;
 }
 
 .add-info-text {
@@ -652,4 +654,51 @@ h4 {
 .description {
     font-size: 18px;
     color: var(--paragraph-text-color);
+}
+.sale {
+    width: 1312px;
+    height: 546px;
+    background-image: url('/images/background-sale.png');
+    border-radius: 33px;
+    padding: 30px;
+    margin-bottom: 40px;
+}
+
+.sale-main-text {
+    font-size: 52px;
+    color: #fff;
+}
+
+.add-info-sale {
+    font-size: 20px;
+    color: #fff;
+}
+
+.get-sale {
+    background-color: #fff;
+    color: var(--main-text-color);
+}
+
+.main-info-sale {
+    display: flex;
+    flex-direction: column;
+    gap: 27px;
+    /* ?????? я не хочу gap */
+}
+
+.text-sale {
+    color: var(--paragraph-text-color);
+}
+
+.time {
+    display: flex;
+}
+
+.blue-gradient {
+    background: linear-gradient(to right, #0C47A0, #8FECFC);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+    font-size: 128px;
 }
