@@ -10,7 +10,9 @@ function daysInMonth (month, year) {
 function timeData () {
   const time = new Date();
 
-  const daysMonth = daysInMonth(time.getDate(), time.getFullYear())
+  const currentMonth = time.getMonth() + 1;
+
+  const daysMonth = daysInMonth(currentMonth, time.getFullYear())
 
   const daysRemained = daysMonth - time.getDate();
   const hoursRemained = 23 - time.getHours();
